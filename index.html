@@ -1,0 +1,68 @@
+<!-- Live preview can be found at https://clusternetworking.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta property="og:image" content="https://cdn.discordapp.com/attachments/411617642420371458/584289472716341259/e08f7ed21f3eed797df172a2517fe1cf.png" />
+     <meta property="og:description" content="zenx, 16 year old developer, HTML, Js, Nodejs, Gamer" />
+     <meta name="description" content="zenx, Wout Haling, 16 year old Belgian developer, HTML, JS, NODEJS">
+     <meta name="keywords" content="zenx, wout haling, developer, web, html, js, nodejs, freelance, wout">
+     <title>zenx Developer</title>
+     <link rel="stylesheet" href="css/master.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/edgy.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="js/jquery.vide.js"></script>
+</head>
+<!-- Autoplay background video -->
+<body data-vide-bg="vid">
+      <!-- 'zenx' text in middle of screen -->
+     <h1>zenx</h1>
+
+          <br>
+          <center><div id="clockDisplay" class="clockStyle"></div></center>
+          <!-- Clock script -->
+          <script>
+          function renderTime() {
+          var currentTime = new Date();
+          var diem = "am";
+          var h = currentTime.getHours();
+          var m = currentTime.getMinutes();
+          var s = currentTime.getSeconds();
+          setTimeout('renderTime()',1000);
+          if (h == 0) {
+               h = 12;
+          } else if (h > 12) { 
+               h = h - 12;
+               diem="pm";
+          }
+          if (h < 10) {
+               h = "0" + h;
+          }
+          if (m < 10) {
+               m = "0" + m;
+          }
+          if (s < 10) {
+               s = "0" + s;
+          }
+          var myClock = document.getElementById('clockDisplay');
+          myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+          myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+          }
+          renderTime();
+          </script><br>	
+          
+          
+          <pre><a href="#">zenx developer<br><br> </a></pre>
+
+<!-- Links to pages -->
+<pre><p >[ <a href="http://wouthaling.be" >Portfolio</a> &zwnj; <a href="https://github.com/ORI00" >Github</a> &zwnj; <a href="https://steamcommunity.com/id/yungzenx">Steam Account</a> &zwnj; <a href="https://github.com/ORI00" >Projects</a> ]</pre>
+    
+<!-- Autoplay music -->
+<embed id="bgAudio" type="audio/mpeg" src="music/vid.mp3" autoplay="true" volume="50" height="0" width="200" autostart="true"> </embed>
+
+
+</body>
+</html>
